@@ -1,0 +1,29 @@
+So, Whenever we develop the restful web services using spring MVC we use "@RestController" then all the rest API'S return JSON to the client.
+@RestController is a combination of @Controller and @ResponseBody
+To make a java class as a Spring MVC controller we use "@Controller" annotation
+In Order to convert a Java Object into JSON we Use "@ResponseBody" annotation
+
+
+Create a Supermarket app using Java OOP
+
+Quiz 1
+
+=> The @SpringBootApplication annotation is the main annotation used to define a Spring Boot application. It combines several annotations, including @Configuration, @EnableAutoConfiguration, and @ComponentScan
+=>The @RestController annotation is used to indicate a class that handles RESTful requests in Spring Boot. It combines the @Controller and @ResponseBody annotations, making it convenient for building REST APIs.
+=>The @PathVariable annotation is used in Spring Boot to retrieve path parameters from a RESTful API request. It allows you to extract variables from the URI path and use them in your controller method.
+=>@RequestParam annotation is used to retrieve query parameters from the RESTful API request URL.
+=>The @RequestBody annotation is used to bind HTTP request bodies to method parameters in Spring MVC. It allows you to extract the request body content, such as JSON or XML, and map it to a Java object.
+=>@RequestMapping annotation is used on class level to define a base URL for all the REST APIs in a Controller class?
+
+Quiz 2
+
+=>The spring-boot-starter-web dependency provides the necessary components to develop a RESTful API in a Spring Boot project, including the embedded Tomcat server, Spring Web MVC, and other required dependencies.
+=>To use Spring Data JPA in a Spring Boot application, you need to include the spring-boot-starter-data-jpa dependency in your project's dependencies. This starter dependency includes the necessary dependencies for working with JPA and provides auto-configuration for Spring Data JPA
+=>Using three-layer architecture in Spring Boot application, we create service layer and we will keep all business logic of the application in service layer.
+
+Explain HTTP Method CRUD Operation =>Post/Get/Put/Delete
+
+=>The @GetMapping annotation is used in Spring Boot to handle HTTP GET requests. It is applied to a method in a controller class and maps the method to a specific URL endpoint for GET requests.
+
+
+=>Lombok is a Java library that helps reduce boilerplate code in Java classes by providing annotations to generate common code (getter/setter methods, constructors, toString() method etc) automatically during the compilation process.

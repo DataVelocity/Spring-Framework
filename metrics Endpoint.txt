@@ -1,0 +1,21 @@
+ /metrics Endpoint
+The metrics endpoint publishes information about OS and JVM as well as application-level metrics. Once enabled, we get information such as memory, heap, processors, threads, classes loaded, classes unloaded, and thread pools, along with some HTTP metrics as well.
+
+The /health endpoint is used to check the health or state of the running application.
+/health shows application health information (a simple status when accessed over an unauthenticated connection or full message details when authenticated); it’s not sensitive by default.
+/info displays arbitrary application info; it’s not sensitive by default.
+/metrics shows metrics information for the current application; it’s sensitive by default.
+/trace displays trace information (by default, the last few HTTP requests).
+
+Commanly used actuator endpoints in operartional and the running application in spring boot.
+
+1. Actuator /info endpoint
+2. Actuator /health endpoint
+3. Actuator /beans endpoint
+4. Actuator /conditions endpoint
+5. Actuator /mappings endpoint 
+6. Actuator /configprops endpoint
+7. Actuator /matrics endpoint
+8. Actuator /env endpoint
+9. Actuator /threaddump endpoint
+10.Actuator /loggers endpoin - not getting 
