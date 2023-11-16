@@ -1,5 +1,3 @@
-
-
 package com.example.metadata.entity;
 
 //Person.java
