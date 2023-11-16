@@ -17,6 +17,8 @@ public interface UserRepository extends MongoRepository<User, Long> {
 
 
 
+
+
 //
 //package net.javaguides.springboot.repository;
 //
