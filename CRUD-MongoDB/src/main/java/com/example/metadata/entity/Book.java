@@ -10,13 +10,15 @@ public class Book {
  private String id;
  private String name;
  private int age;
+ private String author;
  
  
- public Book(String id, String name, int age) {
+ public Book(String id, String name, int age, String author) {
 	super();
 	this.id = id;
 	this.name = name;
 	this.age = age;
+	this.author=author;
 }
 public String getId() {
 	return id;
@@ -36,7 +38,12 @@ public int getAge() {
 public void setAge(int age) {
 	this.age = age;
 }
-
+public String getAuthor() {
+	return author;
+}
+public void setAuthor(String author) {
+	this.author = author;
+}
 
  // Constructors, getters, setters
 }
