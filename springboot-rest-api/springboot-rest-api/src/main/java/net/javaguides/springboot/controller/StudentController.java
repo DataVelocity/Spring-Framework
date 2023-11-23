@@ -15,11 +15,7 @@ public class StudentController {
     // http://localhost:8080/student
     @GetMapping("student")
     public Student getStudent(){
-        Student student = new Student(
-          1,
-          "Ramesh",
-          "Fadatare"
-        );
+        Student student = new Student( 1, "Golu", "Sharma");
         return student;
     }
 
@@ -27,10 +23,10 @@ public class StudentController {
     @GetMapping("students")
     public List<Student> getStudents(){
         List<Student> students = new ArrayList<>();
-        students.add(new Student(1, "Ramesh", "Fadatare"));
-        students.add(new Student(2, "umesh", "Fadatare"));
-        students.add(new Student(3, "Ram", "Jadhav"));
-        students.add(new Student(4, "Sanjay", "Pawar"));
+        students.add(new Student(1, "Abhinav", "Singh"));
+        students.add(new Student(2, "umesh", "Gupta"));
+        students.add(new Student(3, "Mahatma", "Pandit"));
+        students.add(new Student(4, "Sanjay", "Gandhi"));
         return students;
     }
 
