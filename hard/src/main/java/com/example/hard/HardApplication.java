@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-//@RestController
+@RestController
 public class HardApplication {
 
 	public static void main(String[] args) {
 
 		SpringApplication.run(HardApplication.class, args);
-		System.out.println("Hello AWS EC2");
+//		System.out.println("Hello AWS EC2");
 	}
-//	@GetMapping("/simple")
-//	public String simpleProject() {
-//
-//		return " Spring Boot Application !";
-//	}
+	@GetMapping("/go")
+	public String simpleProject() {
+
+		return " Spring Boot App! Deployed On AWS EC2 ";
+	}
 
 
 }
