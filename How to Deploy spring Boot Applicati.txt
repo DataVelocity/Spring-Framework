@@ -1,0 +1,9 @@
+How to Deploy spring Boot Application on AWS cloud. Here are some steps:-
+step-1  yum list java*
+step-2   sudo yum install java [copy-paste version from the java list "devel version"]
+step-3  yes
+step-4 java -jar filename.jar
+step- 5 ls
+"ls " it is used to check file name which is uploaded.
+
+
