@@ -12,14 +12,14 @@ import java.util.List;
 @RestController
 public class StudentController {
 
-    // http://localhost:8080/student
+   
     @GetMapping("list")
     public Student getStudent(){
         Student student = new Student( 1, "Golu", "Sharma");
         return student;
     }
 
-    // http://localhost:8080/students
+   
     @GetMapping("lists")
     public List<Student> getStudents(){
         List<Student> students = new ArrayList<>();
@@ -30,9 +30,7 @@ public class StudentController {
         return students;
     }
 
-    // Spring BOOT REST API with Path Variable
-    // {id} - URI template variable
-    // http://localhost:8080/students/1/ramesh/fadatare
+    
     @GetMapping("lists/{id}/{first-name}/{last-name}")
     public Student studentPathVariable(@PathVariable("id") int studentId,
                                        @PathVariable("first-name") String firstName,
@@ -41,7 +39,7 @@ public class StudentController {
     }
 
     // Spring boot REST API with Request Param
-    //  http://localhost:8080/students/query?id=1&firstName=Ramesh&lastName=Fadatare
+   
     @GetMapping("lists/query")
     public Student studentRequestVariable(@RequestParam int id,
                                           @RequestParam String firstName,
